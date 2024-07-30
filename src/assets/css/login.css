@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bg {
+    --lt-blue: #196bd4;
+    --dk-blue: #1783e1;
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--lt-blue) 20%, transparent 60%), radial-gradient(ellipse at -50% -150%, transparent 80%, var(--lt-blue) 80%), linear-gradient(145deg, var(--lt-blue) 0, var(--dk-blue) 60%);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.user_card {
+    height: 430px;
+    width: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #01114b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 152px;
+    width: 152px;
+    top: -75px;
+    border-radius: 50%;
+    background: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    /* border: 2px solid white; */
+}
+
+.login_btn {
+    width: 100%;
+    background: #6e84d6 !important;
+    color: black !important;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+}
+
+.login_btn:hover {
+    background-color: #8BC6EC !important;
+    background-image: linear-gradient(135deg, #4aa4e0 0%, #565ded 100%) !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    height: 50px;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    color: white;
+    border: 0;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.input-group {
+    width: 340px;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c0392b !important;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    padding: 1rem 4.75rem !important;
+}
+
+.links {
+    color: #ACACAC;
+}
+
+.links a {
+    color: #c39f75;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.form_container {
+    margin-top: 80px;
+}
+
+#login-form {
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    #login-form {
+        padding-top: 110px;
+    }
+
+    .input-group {
+        width: 285px;
+    }
+}
+
+.brand_logo {
+    transition: transform 0.9s;
+}
+
+.brand_logo_container:hover .brand_logo {
+    transform: rotatez(380deg);
+}
+
+#password {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+/* Checkbox */
+.custom-checkbox .custom-control-input {
+    width: 17px;
+    height: 17px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #777;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox .custom-control-input:checked::before {
+    content: "\2713";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox .custom-control-label {
+    font-size: 18px;
+}
